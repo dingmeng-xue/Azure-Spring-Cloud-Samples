@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "EndpointSample": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Eureka:Client:ShouldRegisterWithEureka": "true",
+        "Eureka:Client:ServiceUrl": "https://dixue-asae-test.svc.asc-test.net/eureka/default/eureka"
+      },
+      "applicationUrl": "http://localhost:5000"
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+}
