@@ -1,13 +1,11 @@
 {
   "profiles": {
-    "EndpointSample": {
+    "WeatherForecastSample": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "Eureka:Client:ShouldRegisterWithEureka": "true",
-        "Eureka:Client:ServiceUrl": "https://dixue-asae-test.svc.asc-test.net/eureka/default/eureka"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "http://localhost:5000"
     }

@@ -4,7 +4,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace EndpointSample.Controllers
+namespace Azure.SpringApps.Sample.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Description>EndpointSample project</Description>
+    <Description>WeatherForecast project</Description>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
@@ -12,12 +12,13 @@
 
   <ItemGroup>
     <PackageReference Include="Steeltoe.Discovery.Eureka" Version="3.2.4" />
-	<PackageReference Include="Steeltoe.Common.Security" Version="3.2.4" />
-	<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.*" />
+	  <PackageReference Include="Steeltoe.Common.Security" Version="3.2.4" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.*" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Steeltoe.Management.EndpointCore" Version="$(SteeltoeVersion)" />
+	  <PackageReference Include="Steeltoe.Extensions.Configuration.PlaceholderCore" Version="$(SteeltoeVersion)"/>
   </ItemGroup>
 
 </Project>

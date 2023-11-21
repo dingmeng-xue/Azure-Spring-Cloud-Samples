@@ -5,11 +5,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Steeltoe.Common.Options;
-using Steeltoe.Discovery.Client;
 using Steeltoe.Management.Endpoint;
 using System.Security.Cryptography.X509Certificates;
 
-namespace EndpointSample
+namespace Azure.SpringApps.Sample
 {
     public class Startup
     {
@@ -30,7 +29,10 @@ namespace EndpointSample
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WeatherForecast", Version = "v1" });
             });
-            services.Configure<CertificateOptions>(c => c.Certificate = new X509Certificate2(Configuration.GetValue<string>("certificate"), (string)null, X509KeyStorageFlags.Exportable));
+            if(Configuration.GetValue<string>("certificate") != null)
+            {
+                services.Configure<CertificateOptions>(c => c.Certificate = new X509Certificate2(Configuration.GetValue<string>("certificate"), (string)null, X509KeyStorageFlags.Exportable));
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

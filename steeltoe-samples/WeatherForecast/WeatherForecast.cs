@@ -1,6 +1,6 @@
 using System;
 
-namespace EndpointSample
+namespace Azure.SpringApps.Sample
 {
     public class WeatherForecast
     {
