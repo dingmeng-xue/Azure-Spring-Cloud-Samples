@@ -27,6 +27,13 @@ buildNumber.properties
 .project
 .settings
 
+# .NET
+.vs/
+bin/
+obj/
+*.csproj.user
+
+
 # Publish
 publish/
 
